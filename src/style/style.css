@@ -1,0 +1,80 @@
+.bg {
+  background-image: linear-gradient(
+  45deg,
+  hsl(0deg 0% 34%) 0%,
+  hsl(344deg 0% 42%) 10%,
+  hsl(344deg 0% 50%) 20%,
+  hsl(344deg 0% 59%) 30%,
+  hsl(344deg 0% 68%) 40%,
+  hsl(0deg 0% 77%) 50%,
+  hsl(1deg 10% 78%) 60%,
+  hsl(1deg 21% 79%) 70%,
+  hsl(1deg 33% 80%) 80%,
+  hsl(0deg 45% 81%) 90%,
+  hsl(0deg 58% 81%) 100%
+);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* additions here*/
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.wave {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(225, 251, 251, 0.363));
+
+}
+.out{
+  display:unset;
+  margin: auto;
+}
+.wave span {
+  color: white;
+  position: relative;
+  padding: 1px;
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: bolder;
+  font-family: serif;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+
+}
+
+@keyframes waviy {
+
+  0%,
+  40%,
+  100% {
+    transform: translate(0);
+    background: #B7DEED;
+    background: linear-gradient(to right, #B7DEED 0%, #71CEEF 25%, #21B4E2 75%, #B7DEED 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  20% {
+    transform: translate(-20px);
+    background: #B7DEED;
+    background: linear-gradient(to right, #B7DEED 0%, #71CEEF 25%, #21B4E2 75%, #B7DEED 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.head {
+  width: 100%;
+}
