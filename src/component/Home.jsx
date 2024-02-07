@@ -36,6 +36,9 @@ const Home = () => {
     const profileClick=()=>{
         navigate(`/profile`)
     }
+    const TermClick=()=>{
+        navigate(`/terms&condition`)
+    }
     return (
         <div>
             <div className='bg'>
@@ -50,7 +53,7 @@ const Home = () => {
                                 <MenuItem icon={<CalendarTodayOutlinedIcon />}>Notification</MenuItem>
                                 <MenuItem icon={<ReceiptOutlinedIcon />} onClick={()=>profileClick()}>Profile</MenuItem>
                                 <MenuItem icon={<HelpOutlineOutlinedIcon />}>FAQ</MenuItem>
-                                <MenuItem icon={<HelpOutlineOutlinedIcon />}>Terms and Condition</MenuItem>
+                                <MenuItem icon={<HelpOutlineOutlinedIcon />} onClick={()=>TermClick()}>Terms and Condition</MenuItem>
                             </Menu>
                         </Sidebar>
                     </div>

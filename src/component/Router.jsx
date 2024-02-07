@@ -4,6 +4,7 @@ import Home from './Home'
 import Team from './Team'
 import Contact from './Contact'
 import  {Profile}  from './Profile'
+import { TermsCondition } from './TermsCondition'
 
 
 export const Router = () => {
@@ -15,8 +16,9 @@ export const Router = () => {
             <Route path='/team' element={<Team/>}/>
             <Route path='/review' element={<Contact/>}/>
             <Route path='/profile' element={<Profile/>}/>
+            <Route path='/terms&condition' element={<TermsCondition/>}/>
          </Routes>
-         </BrowserRouter> 
+      </BrowserRouter> 
     </div>
   )
 }
